@@ -1,0 +1,139 @@
+<!doctype html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+		<title>reveal.js</title>
+
+		<link rel="stylesheet" href="css/reset.css">
+		<link rel="stylesheet" href="css/reveal.css">
+		<link rel="stylesheet" href="css/theme/black.css">
+
+		<!-- Theme used for syntax highlighting of code -->
+		<link rel="stylesheet" href="lib/css/monokai.css">
+
+		<!-- Printing and PDF exports -->
+		<script>
+			var link = document.createElement( 'link' );
+			link.rel = 'stylesheet';
+			link.type = 'text/css';
+			link.href = window.location.search.match( /print-pdf/gi ) ? 'css/print/pdf.css' : 'css/print/paper.css';
+			document.getElementsByTagName( 'head' )[0].appendChild( link );
+		</script>
+	</head>
+	<body>
+		<div class="reveal">
+			<div class="slides">
+				<section>
+					<h1>Docker Workshop</h1>
+					<h4>The why, how and what ever</h4>
+				</section>
+				<section data-markdown><textarea data-template>
+					## Outline
+
+					- General information about DevOps
+					- General overview
+					- Docker for developers
+					- Kubernetes for mental health
+				</textarea></section>
+
+				<!-- Introduction to DevOps -->
+                <section data-markdown><textarea data-template>
+                    # What (the fuck) is DevOps and why should I care?
+				</textarea></section>
+
+				<section>
+					<img src="./static/devops.png" style="width: 100%; height: 100%">
+				</section>
+
+				<!-- Docker overview -->
+				<section data-markdown><textarea data-template>
+                    # Why Docker?
+                    ## A short overview
+				</textarea></section>
+
+				<section data-markdown><textarea data-template>
+					## Setting up development environments
+
+					- Sucks
+					- Takes time and therefore **money**
+					- Inherently non-deterministic
+				</textarea></section>
+
+				<!-- Comparison to virtual machines -->
+				<section data-markdown><textarea data-template>
+					# Docker vs Virtual machines
+				</textarea></section>
+
+				<section data-markdown><textarea data-template>
+					![Virtual machine example](static/VirtualMachines.jpg "Virtual machines")
+				</textarea></section>
+
+				<section data-markdown><textarea data-template>
+                    # Docker for developers
+				</textarea></section>
+
+				<section data-markdown><textarea data-template>
+					## Technical background
+
+					- Combines technologies from the Linux kernel and virtualization
+				</textarea></section>
+
+				<section data-markdown><textarea data-template>
+					## Kernel
+				</textarea></section>
+
+				<section data-markdown><textarea data-template>
+				</textarea></section>
+
+				<section data-markdown><textarea data-template>
+                    # Kubernetes
+				</textarea></section>
+
+				<section data-markdown><textarea data-template>
+					## Advantages
+
+					- More workload on same hardware
+				</textarea></section>
+
+				<section data-markdown><textarea data-template>
+
+				</textarea></section>
+
+				<section data-markdown><textarea data-template>
+					## Speed
+
+					- No noticable difference to running applications natively
+				</textarea></section>
+
+				<section data-markdown><textarea data-template>
+
+				</textarea></section>
+			</div>
+		</div>
+
+		<script src="js/reveal.js"></script>
+
+		<script>
+			// More info about config & dependencies:
+			// - https://github.com/hakimel/reveal.js#configuration
+			// - https://github.com/hakimel/reveal.js#dependencies
+			Reveal.initialize({
+				controls: true,
+				progress: true,
+				hash: true,
+                fragmentInUrl: true,
+				width: "100%",
+				height: "100%",
+				margin: .1,
+				dependencies: [
+					{ src: 'plugin/markdown/marked.js' },
+					{ src: 'plugin/markdown/markdown.js' },
+					{ src: 'plugin/notes/notes.js', async: true },
+					{ src: 'plugin/highlight/highlight.js', async: true }
+				]
+			});
+		</script>
+	</body>
+</html>
